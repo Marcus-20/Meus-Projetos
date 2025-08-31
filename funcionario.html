@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Salário com Comissão</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: auto; padding: 20px; }
+        input[type="number"], input[type="submit"] { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+        input[type="submit"] { background-color: #4CAF50; color: white; border: none; cursor: pointer; font-size: 16px; }
+        input[type="submit"]:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Salário Final</h1>
+    <p>Insira os valores abaixo para calcular a comissão e o salário final do funcionário.</p>
+
+    <form action="cauculo-comissão.php" method="post">
+        <label for="salario_fixo">Salário Fixo (R$):</label><br>
+        <input type="number" id="salario_fixo" name="salario_fixo" step="0.01" placeholder="Ex: 1500.00" required>
+        <br><br>
+
+        <label for="valor_vendas">Valor Total das Vendas (R$):</label><br>
+        <input type="number" id="valor_vendas" name="valor_vendas" step="0.01" placeholder="Ex: 10000.00" required>
+        <br><br>
+
+        <input type="submit" value="Calcular Salário">
+    </form>
+
+</body>
+</html>
